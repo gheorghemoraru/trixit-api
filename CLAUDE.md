@@ -17,8 +17,7 @@ Codename: Trixit. What the application does is not defined yet; keep the domain 
 - Packaging is `war`, final name `api`, so the file is `api.war` and the context path is `/api`.
 - It is deployed into a standalone Tomcat 11 (Servlet 6.1), which is what Spring Boot 4 requires. Do not rely on embedded Tomcat in production.
 - `spring-boot-starter-tomcat` has scope `provided`.
-- The entry class extends `SpringBootServletInitializer` and keeps a `main` method.
-- For local runs (`mvn spring-boot:run`), set `server.servlet.context-path=/api` so URLs match production.
+- The entry class extends `SpringBootServletInitializer` and has no `main` method: the app only runs when deployed as a WAR into Tomcat 11 (`mvn spring-boot:run` and IDE runs do not work).
 - The UI is served by the same Tomcat under `/ui/`, same origin: no CORS, no proxy, no redirects. Do not add CORS configuration.
 
 ## Database

@@ -1,6 +1,5 @@
 package com.trixit;
 
-import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
@@ -11,9 +10,5 @@ public class TrixitApplication extends SpringBootServletInitializer {
     @Override
     protected SpringApplicationBuilder configure(SpringApplicationBuilder builder) {
         return builder.sources(TrixitApplication.class);
-    }
-
-    public static void main(String[] args) {
-        SpringApplication.run(TrixitApplication.class, args);
     }
 }

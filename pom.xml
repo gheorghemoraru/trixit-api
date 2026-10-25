@@ -19,6 +19,8 @@
 
     <properties>
         <java.version>21</java.version>
+        <!-- No main method: plain WAR for external Tomcat, not an executable one -->
+        <spring-boot.repackage.skip>true</spring-boot.repackage.skip>
     </properties>
 
     <dependencies>
