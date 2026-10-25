@@ -1,0 +1,25 @@
+# Build output
+target/
+
+# IDE
+.idea/
+*.iml
+.vscode/
+.classpath
+.project
+.settings/
+*.swp
+
+# Secrets and local config
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.jks
+application-local*.properties
+application-secret*.properties
+
+# OS / logs
+.DS_Store
+*.log
